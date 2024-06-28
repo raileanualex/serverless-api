@@ -1,0 +1,26 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "author": "railalex",
+    "dependencies": {
+        "@enter-at/lambda-handlers": "^4.0.0",
+        "aws-cdk": "^2.145.0",
+        "aws-cdk-lib": "^2.145.0",
+        "aws-lambda": "^1.0.7",
+        "constructs": "^10.3.0",
+        "esbuild": "^0.21.5",
+        "typescript-eslint": "^7.13.0"
+    },
+    "scripts": {
+        "lint": "eslint 'service/**/*.{ts,jsx}'",
+        "infra:deploy": "cdk list && cdk deploy",
+        "infra:bootstrap": "cdk bootstrap"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "datadog-cdk-constructs-v2": "^1.13.0",
+        "eslint": "^8.56.0",
+        "globals": "^15.4.0"
+    }
+}
