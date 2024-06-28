@@ -7,6 +7,8 @@ export class HelloWorld {
     ) {}
 
     public async run(payload: APIGatewayProxyEvent, context: Context): Promise<unknown> {
+        console.log(payload);
+        console.log(context);
         return this.helloWorldRepository.sayHelloWorld();
     }
 }
